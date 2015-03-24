@@ -473,9 +473,13 @@ exec: {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin',
+    'htmlmin'
+  ]);
+
+  grunt.registerTask('save', [
     'exec'
   ]);
+
 
   grunt.registerTask('default', [
     'newer:jshint',
