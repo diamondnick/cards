@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+        .when('/preflop', {
+        templateUrl: 'views/preflop.html',
+        controller: 'PreflopCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
