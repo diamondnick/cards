@@ -19,19 +19,9 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-        .when('/', {
+       .when('/', {
         templateUrl: 'views/preflop.html',
         controller: 'PreflopCtrl'
       })
-      .otherwise({
-        redirectTo: '/'
-      });
+    
   });

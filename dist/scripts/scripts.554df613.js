@@ -1,0 +1,1 @@
+"use strict";angular.module("cardsApp",["ngAnimate","ngCookies","ngResource","ngRoute","ngSanitize","ngTouch"]).config(["$routeProvider",function(a){a.when("/",{templateUrl:"views/preflop.html",controller:"PreflopCtrl"})}]);
