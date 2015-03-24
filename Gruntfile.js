@@ -26,6 +26,13 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
+ 
+
+exec: {
+  commit: {
+    cmd: 'commit "nocomment"'
+  }
+},
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -466,7 +473,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'exec'
   ]);
 
   grunt.registerTask('default', [
@@ -474,4 +482,7 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+ grunt.loadNpmTasks('grunt-exec');
+
 };
