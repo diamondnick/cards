@@ -476,7 +476,7 @@ exec: {
     'htmlmin'
   ]);
 
-  grunt.registerTask('save', [
+  grunt.registerTask('save', ['build',
     'exec'
   ]);
 
