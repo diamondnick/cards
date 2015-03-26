@@ -21,7 +21,6 @@ angular
     $routeProvider
        .when('/', {
         templateUrl: 'views/preflop.html',
-        controller: 'PreflopCtrl'
-      })
-    
+        controller: 'PreflopController'
+      }) ;
   });
