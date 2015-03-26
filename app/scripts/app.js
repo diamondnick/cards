@@ -8,7 +8,9 @@
  *
  * Main module of the application.
  */
-angular
+
+
+ var cardsApp = angular
   .module('cardsApp', [
     'ngAnimate',
     'ngCookies',
@@ -16,8 +18,9 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+
+  cardsApp.config(function ($routeProvider) {
     $routeProvider
        .when('/', {
         templateUrl: 'views/preflop.html',

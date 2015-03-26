@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<div ng-app="cardsApp" 
+<div ng-app="cardsApp">
 <div class="page">
  <div class="head">
    <div class="container">
@@ -20,17 +20,15 @@
   </div>
 </div>
    <div ng-controller="PreflopController">
-<input id="hand" ng-model="query" ng-keyup="search()" type="text" style="margin-bottom: 10px"  ></input>
+<input id="hand" ng-model="query"  type="text" style="margin-bottom: 10px"  ></input>
 
   <div ng-repeat="item in items | situationFilter:query" class="row">
 
          <div class="col-xs-12 col-sm-4">
-               <img src="classic-cards/{{item.card1}}.png">          
-                  <img src="images/classic-cards/{{item.card2}}alt.png"/>           
-                  <img  src="images/classic-cards/{{item.card2}}.png"/>             
+                  <img src="images/classic-cards/{{item.card1}}.png">          
+                  <img ng-hide="item.suited" src="images/classic-cards/{{item.card2}}alt.png"/>           
+                  <img ng-show="item.suited"  src="images/classic-cards/{{item.card2}}.png"/>             
           </div>  
-
-     <div>{{item.card1}}</div> <div>{{item.card2}}</div>
 
       <div class="col-xs-12 col-sm-4 advice-column">
           <div class="advice">
