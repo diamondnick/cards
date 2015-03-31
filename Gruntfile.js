@@ -125,6 +125,7 @@ exec: {
     jshint: {
       options: {
         jshintrc: '.jshintrc',
+        unused: false,
         reporter: require('jshint-stylish')
       },
       all: {

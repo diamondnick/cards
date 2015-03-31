@@ -1,4 +1,5 @@
  'use strict';
+  /*jshint unused:false*/
 /**
   var R = 'Raise';
    var B = 'Bet';
@@ -177,4 +178,4 @@ var EMPTY = '';
            ['43s', F,F,       F,F    ,F,F               ,C4,F,      EMPTY,  F],
            ['32s', F,F,       F,F    ,F,F               ,C4,F,      EMPTY,  F],
 
-           ]
+           ];

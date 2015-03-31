@@ -23,7 +23,7 @@
   cardsApp.config(function ($routeProvider) {
     $routeProvider
        .when('/', {
-        templateUrl: 'views/preflop.html',
+        templateUrl: 'preflop.html',
         controller: 'PreflopController'
       }) ;
   });
