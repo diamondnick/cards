@@ -32,3 +32,9 @@ cardsApp
   });
 
 
+  cardsApp
+  .controller('HelpController', function ($scope) {
+   $scope.show = true;
+  });
+
+

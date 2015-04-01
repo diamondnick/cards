@@ -2,18 +2,18 @@
 <div ng-app="cardsApp">
 <div class="page">
  <div class="head">
-   <div class="container">
+   <div class="container-fluid">
      <div class="row">
        <div class="col-sm-3">
           <h1>Starting Hand 2.0</h1>
            <h4>Call, raise or fold?</h4>
   	</div>
-
+ <div ng-controller="HelpController">
     <div class="col-sm-9" id="help">
-       <div class="well"> 
-         To get a preflop move suggestion, type the first chararacter of your position followed by your two cards.
+       <div class="well" ng-show="show"> 
+         To get a preflop move suggestion, type the first chararacter of your position followed by your two cards.{{show}}
         <p>  example: 'ea9' returns a move suggesion for Ace and 9 in early position.</p>
-          example 2: 'btk' returns a move suggesion for 10 and king in big blind position.<a id="hide" href="#">hide</a>
+          example 2: 'btk' returns a move suggesion for 10 and king in big blind position.<a id="hide" ng-click="show =!show">hide</a> 
         </div>
        </div>
     </div> 
@@ -22,7 +22,7 @@
    <div ng-controller="PreflopController">
 <input id="hand" ng-model="query"  type="text" style="margin-bottom: 10px"  ></input>
 
-  <div ng-repeat="item in items | situationFilter:query" class="row">
+  <div  ng-animate="'animate'" ng-repeat="item in items | situationFilter:query" class="row">
 
          <div class="col-xs-12 col-sm-4">
                   <img src="images/classic-cards/{{item.card1}}.png">          
@@ -44,10 +44,8 @@
 
      
   </div>
+
+ 
 </div>
-
-
-
 </div>
-
 </div>
