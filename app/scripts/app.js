@@ -9,7 +9,6 @@
  * Main module of the application.
  */
 
-
  var cardsApp = angular
   .module('cardsApp', [
     'ngAnimate',

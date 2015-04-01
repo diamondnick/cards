@@ -10,6 +10,8 @@ cardsApp.filter('situationFilter', function(CardService) {
 
 cardsApp.service('CardService', function() {
     var ss = new SituationService();
+
+
     this.getAllSituations = function(){     
           return ss.getAllSituations(cardArray);
     };
