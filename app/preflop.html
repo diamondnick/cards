@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<div ng-app="cardsApp">
+<div>
 <div class="page">
  <div class="head">
    <div class="container-fluid">
@@ -20,7 +20,7 @@
   </div>
 </div>
    <div ng-controller="PreflopController">
-<input id="hand" ng-model="query"  type="text" style="margin-bottom: 10px"  ></input>
+<input id="hand" ng-model="query" maxlength="3" type="text" style="margin-bottom: 10px"  ></input>
 
   <div  ng-animate="'animate'" ng-repeat="item in items | situationFilter:query" class="row">
 
