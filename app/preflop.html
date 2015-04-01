@@ -22,7 +22,7 @@
    <div ng-controller="PreflopController">
 <input id="hand" ng-model="query" maxlength="3" type="text" style="margin-bottom: 10px"  ></input>
 
-  <div  ng-animate="'animate'" ng-repeat="item in items | situationFilter:query" class="row">
+  <div  ng-animate="'animate'" ng-repeat="item in items | situationFilter:query" ng-if="$index < 20" class="row">
 
          <div class="col-xs-12 col-sm-4">
                   <img src="images/classic-cards/{{item.card1}}.png">          

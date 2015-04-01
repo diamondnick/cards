@@ -101,8 +101,8 @@ function SituationQuery(query) {
 
 function SituationService() {
 
-    this.filterSituations =  function(situations, query) {
-
+    this.filterSituations =  function(situations, query, limit) {
+        
          var out = [];
          if(query){
              var  sq = new SituationQuery(query);
