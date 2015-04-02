@@ -5,26 +5,33 @@
    <div class="container-fluid">
      <div class="row">
        <div class="col-xs-12 col-sm-5">
-          <h1>Starting Hand 2.0</h1>
-           <h4>Call, raise or fold?</h4>
+          <h1>Before the Flop</h1>
+          <h4>poker strategy</h4>
   	</div>
 
     <div class="col-xs-12 col-sm-7" id="help">
         <div ng-controller="HelpController">
        <div class="well" ng-show="show"> 
+           <p>This app helps you determine what move you should make in poker based on your position, opposition and cards</p>
            <ul>
            <li>  Step 1: Type e,m,l,b or s representing your position Early, Middle, Late, Big Blind or Small Blind.  </li> 
            <li>  Step 2: Type a,k,q,j,t,9,8,7,6,5,4,3,2 representing your 1st dealt card</li> 
-           <li>  Step 3: Type a,k,q,j,t,9,8,7,6,5,4,3,2 representing your 2nd dealt card </li> 
-          </ul>
-            <a id="hide" ng-click="show =!show">hide</a> 
-        </div>
+           <li>  Step 3: Type a,k,q,j,t,9,8,7,6,5,4,3,2 representing your 2nd dealt card   </li> 
+           <li>  Searching for 'eaa' give you play instructions for aces in early position <a id="hide" ng-click="show =!show">hide</a> </li> 
+         
+           </ul>
+           
+       </div>
+          <div  ng-show="!show"> 
+           <a id="hide" ng-click="show=true">display instructions</a>
+          </div>
+        
        </div>
     </div> 
   </div>
 </div>
    <div ng-controller="PreflopController">
-<input id="hand" ng-model="query" maxlength="3" type="text" style="margin-bottom: 10px"  ></input>
+       <input id="hand" placeholder="example input eaa " ng-model="query" maxlength="3" type="text" style="margin-bottom: 10px"  ></input>
 
   <div  ng-animate="'animate'" ng-repeat="item in items | situationFilter:query" ng-if="$index < 20" class="row">
 
