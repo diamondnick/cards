@@ -8,17 +8,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
-  background: white;  
+    background-image: url("/images/pbg.jpg");
+   
+ // background: white;  
   font-size: 100%;
   color: black;
  // font-family: ‘Roboto Condense’, Arial, serif; font-weight: 400;
 }
 
-.page{
-  @include box-shadow(rgba(0, 0, 0, .2) 0 0 20px);
-  background-color: #fefdfa;
-  border: 1px solid #aab123;
-  margin:55px 180px auto;
+
+.page {
+   @include box-shadow(rgba(0, 0, 0, .2) 0 0 20px);
+ 
+  background-color: rgba(255, 255, 255, 0.69);
+  border: 1px solid #0B0A08;
+  margin: 55px 180px auto;
   padding: 25px;
 }
 
@@ -31,14 +35,13 @@ body {
 
   font-size: 1.5em;
 }
-
 input {
-//   box-sizing: border-box;
-   width: 100%;
-   border: 1px solid #999;
-   background: #fff;
-   padding: 10px;
+  width: 100%;
+  border: 1px solid #999;
+  background: #FCFCFC;
+  padding: 10px;
 }
+
 
 #hand {
    top: 40px;
