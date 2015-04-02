@@ -8,7 +8,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
-    background-image: url("/images/pbg.jpg");
+    background-image: url("../images/pbg.jpg");
    
  // background: white;  
   font-size: 100%;
@@ -20,7 +20,7 @@ body {
 .page {
    @include box-shadow(rgba(0, 0, 0, .2) 0 0 20px);
  
-  background-color: rgba(255, 255, 255, 0.69);
+  background-color: rgba(255, 255, 255, 0.90);
   border: 1px solid #0B0A08;
   margin: 55px 180px auto;
   padding: 25px;
