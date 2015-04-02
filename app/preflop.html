@@ -5,7 +5,7 @@
    <div class="container-fluid">
      <div class="row">
        <div class="col-xs-12 col-sm-5">
-          <h1>Before the Flop</h1>
+          <h1>Preflop</h1>
           <h4>poker strategy</h4>
   	</div>
 
@@ -36,9 +36,9 @@
   <div  ng-animate="'animate'" ng-repeat="item in items | situationFilter:query" ng-if="$index < 20" class="row">
 
          <div class="col-xs-12 col-sm-4">
-                  <img src="images/classic-cards/{{item.card1}}.png">          
-                  <img ng-hide="item.suited" src="images/classic-cards/{{item.card2}}alt.png"/>           
-                  <img ng-show="item.suited"  src="images/classic-cards/{{item.card2}}.png"/>             
+                  <img class='card' src="images/svg-cards/{{item.card1}}_of_clubs.svg">          
+                  <img class='card' ng-hide="item.suited" src="images/svg-cards/{{item.card2}}_of_clubs.svg"/>           
+                  <img class='card' ng-show="item.suited"  src="images/svg-cards/{{item.card2}}_of_hearts.svg"/>             
           </div>  
 
       <div class="col-xs-12 col-sm-4 advice-column">
