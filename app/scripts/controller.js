@@ -8,18 +8,7 @@ cardsApp.filter('situationFilter', function(CardService) {
 });
 
 
-cardsApp.service('CardService', function() {
-    var ss = new SituationService();
-
-
-    this.getAllSituations = function(){     
-          return ss.getAllSituations(cardArray);
-    };
-    this.filterSituations = function(situations, query){
-          return ss.filterSituations(situations, query);
-    };
-
-});
+cardsApp.service('CardService', SituationService);
 
 /**
  * @ngdoc function
@@ -28,6 +17,7 @@ cardsApp.service('CardService', function() {
  * # PreflopController
  * Controller of the cardsApp
  */
+
 cardsApp
   .controller('PreflopController', function ($scope,CardService ) {
    $scope.items = CardService.getAllSituations();
