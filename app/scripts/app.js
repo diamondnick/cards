@@ -8,26 +8,22 @@
  *
  * Main module of the application.
  */
-angular
+
+ var cardsApp = angular
   .module('cardsApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+    'ngTouch',
+    "ngOnboarding"
+  ]);
+
+  cardsApp.config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+       .when('/', {
+        templateUrl: 'preflop.html',
+        controller: 'PreflopController'
+      }) ;
   });

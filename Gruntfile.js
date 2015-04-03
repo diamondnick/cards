@@ -26,6 +26,13 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
+ 
+
+exec: {
+  commit: {
+    cmd: 'commit "nocomment"'
+  }
+},
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -118,6 +125,7 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: '.jshintrc',
+        unused: false,
         reporter: require('jshint-stylish')
       },
       all: {
@@ -238,7 +246,7 @@ module.exports = function (grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+         // '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
@@ -469,9 +477,17 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
+  grunt.registerTask('save', ['build',
+    'exec'
+  ]);
+
+
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
     'build'
   ]);
+
+ grunt.loadNpmTasks('grunt-exec');
+
 };
