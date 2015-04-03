@@ -16,7 +16,8 @@
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    "ngOnboarding"
   ]);
 
   cardsApp.config(function ($routeProvider) {

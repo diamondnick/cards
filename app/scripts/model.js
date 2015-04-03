@@ -8,6 +8,7 @@ function Situation(face, unraisedPot, raisedPot, pos) {
     this.raisedPot = raisedPot;
     this.position = pos;
     this.suited = face.substring(2, 3).toUpperCase() === 'S' ? 'suited' : 'unsuited';
+    this.isSuited = face.substring(2, 3).toUpperCase() === 'S';
     this.same = this.card1 === this.card2;
     this.showDiffCards = this.same || !this.suited;
     this.positionAbbr = pos.substring(0, 1).toUpperCase();
@@ -56,7 +57,7 @@ function Situation(face, unraisedPot, raisedPot, pos) {
 
     this.wildcardMatch = function (card1, card2) {
         var isMatchWIthWildcard = false;
-        if (!isNaN(card1) && ((this.card1 === '#') || (this.card2 === '#'))) {
+        if (!isNaN(card1) && ((this.card1 === 'Z') || (this.card2 === 'Z'))) {
             if (this.card1 === card2 || this.card2 === card2) {
                 isMatchWIthWildcard = true;
             }

@@ -21,6 +21,11 @@ cardsApp.service('CardService', SituationService);
 cardsApp
   .controller('PreflopController', function ($scope,CardService ) {
    $scope.items = CardService.getAllSituations();
+   
+  
+ 
+   
+ 
   });
 
 

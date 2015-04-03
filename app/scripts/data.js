@@ -106,8 +106,8 @@ var EMPTY = '';
    
 
 
-           ['A#s', C1,F,      F,F    ,RFIC1,F            ,C,F,       EMPTY,  C],
-           ['A#',  F,F,       F,F    ,F,F                ,C,F,       EMPTY,  F],
+           ['AZs', C1,F,      F,F    ,RFIC1,F            ,C,F,       EMPTY,  C],
+           ['AZ',  F,F,       F,F    ,F,F                ,C,F,       EMPTY,  F],
 
 
             ['KQs', C,F,      C,F   ,R1C2,C             ,C,C21L,   EMPTY,  C],
@@ -119,7 +119,7 @@ var EMPTY = '';
             ['K9s', F,F,      F,F   ,C2,F               ,C,F,      EMPTY,  C],
             ['K8s', F,F,      F,F   ,C3,F               ,C,F,      EMPTY,  C3],
             ['K7s', F,F,      F,F   ,C3,F               ,C,F,      EMPTY,  C3],
-            ['K#s', F,F,      F,F   ,C4,F               ,C,F,      EMPTY,  C3],
+            ['KZs', F,F,      F,F   ,C4,F               ,C,F,      EMPTY,  C3],
             
 
           
@@ -129,7 +129,7 @@ var EMPTY = '';
            ['QT',  F,F,       F,F   ,C2,F               ,C,F,      EMPTY,  C],
            ['Q9s', F,F,       F,F   ,C2,F               ,C,F,      EMPTY,  C21L],
            ['Q8s', F,F,       F,F   ,C4,F               ,C,F,      EMPTY,  C21L],
-           ['Q#s', F,F,       F,F   ,F,F                ,C3,F,      EMPTY,  C3],
+           ['QZs', F,F,       F,F   ,F,F                ,C3,F,      EMPTY,  C3],
 
 
            ['JTs', C,F,       F,F    ,RFIC1,C4           ,C,C4,     EMPTY,  C],
