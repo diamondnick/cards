@@ -113,6 +113,14 @@ function SituationQuery(query) {
 
 function SituationService() {
 
+
+   this.getSituationByQuery = function(query, limit){
+
+       return this.filterSituations(this.getAllSituations(),query,limit);
+
+   }
+
+
     this.filterSituations = function (situations, query, limit) {
 
         var out = [];

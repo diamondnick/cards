@@ -10,7 +10,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 h1{
    font-size: 8em; 
    margin-bottom: 0px;
-   
+   font-family: 'EB Garamond', serif;
 }
 
 
@@ -24,12 +24,12 @@ h1{
 }
 
 body {
-    background-image: url("../images/pbg.jpg");
+    background-image: url("../images/pbg-min.jpg");
    
  // background: white;  
   font-size: 100%;
   color: black;
-  font-family: 'Veradna';
+  font-family: Oxygen, sans-serif;
 }
 
 
